@@ -1,6 +1,7 @@
 import './hello.css'
 import { useState } from 'react';
 import IncreaseBtn from './IncreaseBtn';
+import LowerBtn from './lowerBtn';
 
 export default function Hello(props) {
 
@@ -31,7 +32,7 @@ export default function Hello(props) {
             (age1 >= 20) ? ac : bc}
 
         <IncreaseBtn setAge2={increaseAgeByOne} />
-        <IncreaseBtn setAge2={lowerAgeByOne} />
+        <LowerBtn setAge3={lowerAgeByOne} />
 
     </div>
 }
